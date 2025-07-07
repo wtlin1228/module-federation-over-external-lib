@@ -1,25 +1,21 @@
-import { useState } from "react";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
 import "./App.css";
-import { KirbyCafe } from "./KirbyCafe";
-import { PikminCafe } from "./PikminCafe";
+
+// Import the generated route tree
+import { routeTree } from "./routeTree.gen";
+
+// Create a new router instance
+const router = createRouter({ routeTree });
+
+// Register the router instance for type safety
+declare module "@tanstack/react-router" {
+  interface Register {
+    router: typeof router;
+  }
+}
 
 const App = () => {
-  const [showKirbyCafe, setShowKirbyCafe] = useState(false);
-  const [showPikminCafe, setShowPikminCafe] = useState(false);
-
-  return (
-    <>
-      <button onClick={() => setShowKirbyCafe((v) => !v)}>toggle kirby</button>
-      <button onClick={() => setShowPikminCafe((v) => !v)}>
-        toggle pikmin
-      </button>
-
-      <div className="content">
-        {showKirbyCafe && <KirbyCafe />}
-        {showPikminCafe && <PikminCafe />}
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

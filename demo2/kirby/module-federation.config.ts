@@ -9,7 +9,9 @@ export default createModuleFederationConfig({
   shared: {
     react: { singleton: true },
     "react-dom": { singleton: true },
-    lodash: dependencies.lodash,
+    // specify the version manually for demo purpose
+    lodash: "^4.0.0",
+    // lodash: dependencies.lodash,
   },
   getPublicPath: `function() { return "http://localhost:3001/"; }`,
 });
