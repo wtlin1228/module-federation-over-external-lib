@@ -1,0 +1,25 @@
+{
+  "name": "host",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.16.0",
+    "@tanstack/react-router": "^1.125.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^0.16.0",
+    "@rsbuild/core": "^1.2.15",
+    "@rsbuild/plugin-react": "^1.1.1",
+    "@tanstack/router-plugin": "^1.125.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "~18.3.1",
+    "typescript": "^5.7.2"
+  }
+}

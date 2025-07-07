@@ -1,0 +1,120 @@
+{
+  "id": "pikmin",
+  "name": "pikmin",
+  "metaData": {
+    "name": "pikmin",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "pikmin"
+    },
+    "remoteEntry": {
+      "name": "static/js/pikmin.15a91f70.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "pikmin",
+    "pluginVersion": "0.16.0",
+    "prefetchInterface": false,
+    "getPublicPath": "function() { return \"/app/pikmin/\"; }"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "pikmin:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/366.1f0289d0.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "*",
+      "eager": false,
+      "id": "pikmin:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/389.81f134ef.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^4.17.21",
+      "shareScope": "default",
+      "import": "lodash",
+      "name": "lodash",
+      "version": "4.17.21",
+      "eager": false,
+      "id": "pikmin:lodash",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/11.a28f485a.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": ".",
+      "id": "pikmin:.",
+      "name": ".",
+      "requires": [],
+      "file": "src/components/exposed.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.bd49ceb6.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.32e2009d.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "pikmin",
+  "name": "pikmin",
+  "metaData": {
+    "name": "pikmin",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "pikmin"
+    },
+    "remoteEntry": {
+      "name": "static/js/pikmin.15a91f70.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "pikmin",
+    "pluginVersion": "0.16.0",
+    "prefetchInterface": false,
+    "getPublicPath": "function() { return \"/app/pikmin/\"; }"
+  },
+  "shared": [
+    {
+      "id": "pikmin:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/366.1f0289d0.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pikmin:react-dom",
+      "name": "react-dom",
+      "version": "*",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/389.81f134ef.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "pikmin:lodash",
+      "name": "lodash",
+      "version": "4.17.21",
+      "singleton": true,
+      "requiredVersion": "^4.17.21",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/11.a28f485a.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "pikmin:.",
+      "name": ".",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.bd49ceb6.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.32e2009d.css"
+          ],
+          "async": []
+        }
+      },
+      "path": "."
+    }
+  ]
+}

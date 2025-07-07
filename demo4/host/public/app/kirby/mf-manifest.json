@@ -1,0 +1,108 @@
+{
+  "id": "kirby",
+  "name": "kirby",
+  "metaData": {
+    "name": "kirby",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "kirby"
+    },
+    "remoteEntry": {
+      "name": "static/js/kirby.c36dc29b.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "kirby",
+    "pluginVersion": "0.16.0",
+    "prefetchInterface": false,
+    "getPublicPath": "function() { return \"/app/kirby/\"; }"
+  },
+  "shared": [
+    {
+      "id": "kirby:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/366.e0354800.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "kirby:react-dom",
+      "name": "react-dom",
+      "version": "*",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/389.684dc8e4.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "kirby:lodash",
+      "name": "lodash",
+      "version": "4.0.0",
+      "singleton": true,
+      "requiredVersion": "^4.0.0",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/339.e386a464.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "kirby:.",
+      "name": ".",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.0d51d8c1.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.32e2009d.css"
+          ],
+          "async": []
+        }
+      },
+      "path": "."
+    }
+  ]
+}
