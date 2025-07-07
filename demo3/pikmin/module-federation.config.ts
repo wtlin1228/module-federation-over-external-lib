@@ -11,5 +11,5 @@ export default createModuleFederationConfig({
     "react-dom": { singleton: true },
     lodash: dependencies.lodash,
   },
-  getPublicPath: `function() { return "http://localhost:3002/"; }`,
+  getPublicPath: `function() { return "/app/pikmin/"; }`,
 });

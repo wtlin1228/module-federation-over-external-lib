@@ -22,8 +22,6 @@ To run the demo locally:
 
 4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
----
-
 # Explanation
 
 This demo shows how to integrate **Module Federation** with `@tanstack/react-router`. In this case, we don't need to manually call `init` since the `remotes` configuration in `module-federation.config.ts`, remote manifests are automatically known at runtime:

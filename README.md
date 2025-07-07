@@ -13,3 +13,9 @@ Demonstrates how Module Federation handles shared dependencies with version cont
 Shows how to dynamically load remote apps using `@tanstack/react-router` and Module Federation.
 
 👉 [View Demo 2](./demo2/README.md)
+
+## Demo 3 — Dynamically Register Remotes
+
+Demonstrates how to dynamically register remotes at runtime.
+
+👉 [View Demo 3](./demo3/README.md)

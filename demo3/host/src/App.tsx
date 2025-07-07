@@ -1,4 +1,5 @@
 import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { init } from "@module-federation/enhanced/runtime";
 import "./App.css";
 
 // Import the generated route tree
@@ -13,6 +14,11 @@ declare module "@tanstack/react-router" {
     router: typeof router;
   }
 }
+
+init({
+  name: "host",
+  remotes: [],
+});
 
 const App = () => {
   return <RouterProvider router={router} />;

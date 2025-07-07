@@ -13,5 +13,5 @@ export default createModuleFederationConfig({
     lodash: "^4.0.0",
     // lodash: dependencies.lodash,
   },
-  getPublicPath: `function() { return "http://localhost:3001/"; }`,
+  getPublicPath: `function() { return "/app/kirby/"; }`,
 });

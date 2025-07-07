@@ -22,8 +22,6 @@ To run the demo locally:
 
 4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
----
-
 # Explanation
 
 This project demonstrates how Module Federation handles shared dependencies—in this case, different versions of `lodash`.

@@ -2,55 +2,41 @@
 
 To run the demo locally:
 
-1. Start **Kirby**:
-
-   ```sh
-   cd kirby && pnpm i && pnpm build && pnpm preview
-   ```
-
-2. Start **Pikmin**:
-
-   ```sh
-   cd pikmin && pnpm i && pnpm build && pnpm preview
-   ```
-
-3. Start **Host**:
+1. Start **Host**:
 
    ```sh
    cd host && pnpm i && pnpm build && pnpm preview
    ```
 
-4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
-
----
+2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 # Explanation
 
-This demo shows how to integrate **Module Federation** with `@tanstack/react-router`. In this case, we don't need to manually call `init` since the `remotes` configuration in `module-federation.config.ts`, remote manifests are automatically known at runtime:
+This demo shows how to **dynamically register remote modules** at runtime using `@module-federation/enhanced/runtime`.
 
-```ts
-// module-federation.config.ts
-import { createModuleFederationConfig } from "@module-federation/rsbuild-plugin";
+### Dynamic Route Loading
 
-export default createModuleFederationConfig({
-  remotes: {
-    kirby: "kirby@http://localhost:3001/mf-manifest.json",
-    pikmin: "pikmin@http://localhost:3002/mf-manifest.json",
-  },
-});
-```
-
-## Dynamic Routing with `/app/:appId`
-
-We use a dynamic route (`/app/$appId`) in `tanstack-router` to load the appropriate remote app:
+In the `/app/$appId` route, we dynamically register and load the remote based on the route parameter:
 
 ```tsx
 // src/routes/app/$appId.tsx
+
 import { createFileRoute } from "@tanstack/react-router";
-import { loadRemote } from "@module-federation/enhanced/runtime";
+import {
+  registerRemotes,
+  loadRemote,
+} from "@module-federation/enhanced/runtime";
 
 export const Route = createFileRoute("/app/$appId")({
-  loader: ({ params }) => loadRemote(params.appId),
+  loader: ({ params }) => {
+    registerRemotes([
+      {
+        name: params.appId,
+        entry: `app/${params.appId}/mf-manifest.json`,
+      },
+    ]);
+    return loadRemote(params.appId);
+  },
   component: AppComponent,
 });
 
@@ -59,3 +45,24 @@ function AppComponent() {
   return <Exposed />;
 }
 ```
+
+This allows you to support dynamic remotes like `/app/kirby`, `/app/pikmin`, etc., without hardcoding them into the federation config.
+
+---
+
+### ⚙️ Initialization Required
+
+Since you're using `registerRemotes`, you must first call `init()` before loading remotes:
+
+```tsx
+// src/app.tsx
+
+import { init } from "@module-federation/enhanced/runtime";
+
+init({
+  name: "host",
+  remotes: [],
+});
+```
+
+> This step sets up the host's name and initializes the shared scope. Without it, the runtime won't be able to register or resolve remote modules correctly.
