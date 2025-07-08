@@ -1,5 +1,5 @@
 "use strict";
-(self["chunk_kirby"] = self["chunk_kirby"] || []).push([["427"], {
+(self["chunk_pikmin"] = self["chunk_pikmin"] || []).push([["585"], {
 318: (function (__unused_webpack_module, exports) {
 
 const RUNTIME_001 = 'RUNTIME-001';
@@ -1036,7 +1036,7 @@ var helpers = {
 };
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "kirby:1.0.0" : 0;
+    return  true ? "pikmin:1.0.0" : 0;
 }
 // Function to match a remote with its name and expose
 // id: pkgName(@federation/app1) + expose(button) = @federation/app1/button
@@ -3298,7 +3298,7 @@ var runtimeCore = __webpack_require__(443);
 // injected by bundler, so it can not use runtime-core stuff
 function getBuilderId() {
     //@ts-ignore
-    return  true ? "kirby:1.0.0" : 0;
+    return  true ? "pikmin:1.0.0" : 0;
 }
 function getGlobalFederationInstance(name, version) {
     const buildId = getBuilderId();
@@ -4546,13 +4546,13 @@ module.exports = federation;
 
 
 }),
-986: (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(308);
-/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__);
+550: (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo4_pikmin_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(308);
+/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo4_pikmin_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_mujin_wtlin_module_federation_over_external_lib_demo4_pikmin_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__);
 
 const __module_federation_runtime_plugins__ = [];
 const __module_federation_remote_infos__ = {};
-const __module_federation_container_name__ = "kirby";
+const __module_federation_container_name__ = "pikmin";
 const __module_federation_share_strategy__ = "version-first";
 if ((__webpack_require__.initializeSharingData || __webpack_require__.initializeExposesData) && __webpack_require__.federation) {
     var __webpack_require___remotesLoadingData, __webpack_require___remotesLoadingData1, __webpack_require___initializeSharingData, __webpack_require___consumesLoadingData, __webpack_require___consumesLoadingData1, __webpack_require___initializeExposesData, __webpack_require___consumesLoadingData2;
@@ -4593,8 +4593,8 @@ if ((__webpack_require__.initializeSharingData || __webpack_require__.initialize
     const initializeSharingInitPromises = [];
     const initializeSharingInitTokens = {};
     const containerShareScope = (__webpack_require___initializeExposesData = __webpack_require__.initializeExposesData) === null || __webpack_require___initializeExposesData === void 0 ? void 0 : __webpack_require___initializeExposesData.shareScope;
-    for(const key in (_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())){
-        __webpack_require__.federation[key] = (_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())[key];
+    for(const key in (_home_mujin_wtlin_module_federation_over_external_lib_demo4_pikmin_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())){
+        __webpack_require__.federation[key] = (_home_mujin_wtlin_module_federation_over_external_lib_demo4_pikmin_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())[key];
     }
     early(__webpack_require__.federation, "consumesLoadingModuleToHandlerMapping", ()=>{
         const consumesLoadingModuleToHandlerMapping = {};

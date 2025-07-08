@@ -4548,9 +4548,9 @@ module.exports = federation;
 
 
 }),
-986: (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
-/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(308);
-/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__);
+918: (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo4_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(308);
+/* ESM import */var _home_mujin_wtlin_module_federation_over_external_lib_demo4_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_mujin_wtlin_module_federation_over_external_lib_demo4_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0__);
 
 const __module_federation_runtime_plugins__ = [];
 const __module_federation_remote_infos__ = {};
@@ -4595,8 +4595,8 @@ if ((__webpack_require__.initializeSharingData || __webpack_require__.initialize
     const initializeSharingInitPromises = [];
     const initializeSharingInitTokens = {};
     const containerShareScope = (__webpack_require___initializeExposesData = __webpack_require__.initializeExposesData) === null || __webpack_require___initializeExposesData === void 0 ? void 0 : __webpack_require___initializeExposesData.shareScope;
-    for(const key in (_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())){
-        __webpack_require__.federation[key] = (_home_mujin_wtlin_module_federation_over_external_lib_demo3_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())[key];
+    for(const key in (_home_mujin_wtlin_module_federation_over_external_lib_demo4_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())){
+        __webpack_require__.federation[key] = (_home_mujin_wtlin_module_federation_over_external_lib_demo4_kirby_node_modules_pnpm_module_federation_webpack_bundler_runtime_0_16_0_node_modules_module_federation_webpack_bundler_runtime_dist_index_cjs_cjs__WEBPACK_IMPORTED_MODULE_0___default())[key];
     }
     early(__webpack_require__.federation, "consumesLoadingModuleToHandlerMapping", ()=>{
         const consumesLoadingModuleToHandlerMapping = {};
@@ -4747,7 +4747,7 @@ if ((__webpack_require__.initializeSharingData || __webpack_require__.initialize
 
 
 }),
-983: (function (__unused_webpack_module, exports, __webpack_require__) {
+207: (function (__unused_webpack_module, exports, __webpack_require__) {
 
 __webpack_require__.d(exports, {
 	get: () => (__webpack_require__.getContainer),
@@ -4806,7 +4806,7 @@ if(!__webpack_require__.federation){
     __webpack_require__.federation = {
         
 chunkMatcher: function(chunkId) {
-    return !/^(742|965)$/.test(chunkId);
+    return 454 != chunkId;
 },
 rootOutputDir: "../../",
 
@@ -4857,7 +4857,7 @@ __webpack_require__.u = (chunkId) => {
   // return url for filenames not based on template
   
   // return url for filenames based on template
-  return "static/js/async/" + (chunkId === "249" ? "__federation_expose_default_export" : chunkId) + "." + {"249": "0d51d8c1","339": "e386a464","366": "e0354800","389": "684dc8e4",}[chunkId] + ".js"
+  return "static/js/async/" + (chunkId === "249" ? "__federation_expose_default_export" : chunkId) + "." + {"249": "0915f279","339": "e386a464","366": "e0354800","389": "9a882fae",}[chunkId] + ".js"
 }
 })();
 // webpack/runtime/get mini-css chunk filename
@@ -4872,7 +4872,7 @@ __webpack_require__.miniCssF = (chunkId) => {
 })();
 // webpack/runtime/get_full_hash
 (() => {
-__webpack_require__.h = () => ("a7d7d9423947a790")
+__webpack_require__.h = () => ("80c9ced74754a845")
 })();
 // webpack/runtime/global
 (() => {
@@ -4979,14 +4979,14 @@ __webpack_require__.p = "/app/kirby/";
 (() => {
 
 __webpack_require__.S = {};
-__webpack_require__.initializeSharingData = { scopeToSharingDataMapping: { "default": [{ name: "lodash", version: "4.0.0", factory: () => (__webpack_require__.e("339").then(() => (() => (__webpack_require__(579))))), eager: 0, requiredVersion: "^4.0.0" }, { name: "react-dom", version: "18.3.1", factory: () => (Promise.all([__webpack_require__.e("389"), __webpack_require__.e("965")]).then(() => (() => (__webpack_require__(967))))), eager: 0, singleton: 1 }, { name: "react", version: "18.3.1", factory: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))), eager: 0, singleton: 1 }] }, uniqueName: "kirby" };
+__webpack_require__.initializeSharingData = { scopeToSharingDataMapping: { "default": [{ name: "lodash", version: "4.0.0", factory: () => (__webpack_require__.e("339").then(() => (() => (__webpack_require__(579))))), eager: 0, requiredVersion: "^4.0.0" }, { name: "react-dom", version: "18.3.1", factory: () => (Promise.all([__webpack_require__.e("389"), __webpack_require__.e("454")]).then(() => (() => (__webpack_require__(967))))), eager: 0, singleton: 1 }, { name: "react", version: "18.3.1", factory: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))), eager: 0, singleton: 1 }] }, uniqueName: "kirby" };
 __webpack_require__.I = __webpack_require__.I || function() { throw new Error("should have __webpack_require__.I") }
 
 })();
 // webpack/runtime/consumes_loading
 (() => {
 
-__webpack_require__.consumesLoadingData = { chunkMapping: {"742":["550","907"],"965":["90"]}, moduleIdToConsumeDataMapping: { "550": { shareScope: "default", shareKey: "lodash", import: "lodash", requiredVersion: "^4.0.0", strictVersion: true, singleton: false, eager: false, fallback: () => (__webpack_require__.e("339").then(() => (() => (__webpack_require__(579))))) }, "90": { shareScope: "default", shareKey: "react", import: "react", requiredVersion: "^18.3.1", strictVersion: false, singleton: true, eager: false, fallback: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))) }, "907": { shareScope: "default", shareKey: "react", import: "react", requiredVersion: "*", strictVersion: false, singleton: true, eager: false, fallback: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))) } }, initialConsumes: [] };
+__webpack_require__.consumesLoadingData = { chunkMapping: {"454":["103"],"249":["151","104","892"]}, moduleIdToConsumeDataMapping: { "151": { shareScope: "default", shareKey: "react-dom", import: "react-dom", requiredVersion: "*", strictVersion: false, singleton: true, eager: false, fallback: () => (__webpack_require__.e("389").then(() => (() => (__webpack_require__(967))))) }, "892": { shareScope: "default", shareKey: "react", import: "react", requiredVersion: "*", strictVersion: false, singleton: true, eager: false, fallback: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))) }, "104": { shareScope: "default", shareKey: "lodash", import: "lodash", requiredVersion: "^4.0.0", strictVersion: true, singleton: false, eager: false, fallback: () => (__webpack_require__.e("339").then(() => (() => (__webpack_require__(579))))) }, "103": { shareScope: "default", shareKey: "react", import: "react", requiredVersion: "^18.3.1", strictVersion: false, singleton: true, eager: false, fallback: () => (__webpack_require__.e("366").then(() => (() => (__webpack_require__(271))))) } }, initialConsumes: [] };
 __webpack_require__.f.consumes = __webpack_require__.f.consumes || function() { throw new Error("should have __webpack_require__.f.consumes") }
 })();
 // webpack/runtime/css loading
@@ -5089,7 +5089,7 @@ __webpack_require__.f.miniCss = function(chunkId, promises) {
 __webpack_require__.initializeExposesData = {
   moduleMap: {
   ".": () => {
-return Promise.all(/*  | __federation_expose_default_export */ [__webpack_require__.e("965"), __webpack_require__.e("742"), __webpack_require__.e("249")]).then(() => (() => (__webpack_require__(274))));
+return Promise.all(/*  | __federation_expose_default_export */ [__webpack_require__.e("454"), __webpack_require__.e("249")]).then(() => (() => (__webpack_require__(659))));
 },
 },
   shareScope: "default",
@@ -5116,7 +5116,7 @@ if (installedChunkData !== 0) {
 	if (installedChunkData) {
 		promises.push(installedChunkData[2]);
 	} else {
-		if (!/^(742|965)$/.test(chunkId)) {
+		if (454 != chunkId) {
 			// setup Promise in chunk cache
 			var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 			promises.push((installedChunkData[2] = promise));
@@ -5192,9 +5192,9 @@ chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.pus
 // module cache are used so entry inlining is disabled
 // startup
 // Load entry module and return exports
-__webpack_require__(986);
+__webpack_require__(918);
 __webpack_require__(592);
-var __webpack_exports__ = __webpack_require__(983);
+var __webpack_exports__ = __webpack_require__(207);
 kirby = __webpack_exports__;
 })()
 ;

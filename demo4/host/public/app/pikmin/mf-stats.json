@@ -9,7 +9,7 @@
       "buildName": "pikmin"
     },
     "remoteEntry": {
-      "name": "static/js/pikmin.15a91f70.js",
+      "name": "static/js/pikmin.be80b80d.js",
       "path": "",
       "type": "global"
     },
@@ -45,7 +45,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     },
     {
       "singleton": true,
@@ -59,7 +61,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/389.81f134ef.js"
+            "static/js/async/389.f7d59ba5.js"
           ]
         },
         "css": {
@@ -90,7 +92,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     }
   ],
   "remotes": [],
@@ -99,12 +103,15 @@
       "path": ".",
       "id": "pikmin:.",
       "name": ".",
-      "requires": [],
-      "file": "src/components/exposed.tsx",
+      "requires": [
+        "react",
+        "lodash"
+      ],
+      "file": "src/exposed.tsx",
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.bd49ceb6.js"
+            "static/js/async/__federation_expose_default_export.10b3b0bf.js"
           ],
           "async": []
         },

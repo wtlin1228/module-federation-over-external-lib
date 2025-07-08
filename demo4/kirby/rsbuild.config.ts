@@ -8,6 +8,9 @@ export default defineConfig({
   output: {
     minify: false,
     assetPrefix: "/app/kirby/",
+    externals: {
+      "mf-runtime": "__FEDERATION_ENHANCED_RUNTIME__",
+    },
   },
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig, {})],
   server: {

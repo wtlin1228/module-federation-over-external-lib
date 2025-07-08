@@ -9,7 +9,7 @@
       "buildName": "kirby"
     },
     "remoteEntry": {
-      "name": "static/js/kirby.c36dc29b.js",
+      "name": "static/js/kirby.5ab7186d.js",
       "path": "",
       "type": "global"
     },
@@ -45,7 +45,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     },
     {
       "singleton": true,
@@ -59,7 +61,7 @@
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/389.684dc8e4.js"
+            "static/js/async/389.9a882fae.js"
           ]
         },
         "css": {
@@ -90,7 +92,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     }
   ],
   "remotes": [],
@@ -99,12 +103,15 @@
       "path": ".",
       "id": "kirby:.",
       "name": ".",
-      "requires": [],
-      "file": "src/components/exposed.tsx",
+      "requires": [
+        "react",
+        "lodash"
+      ],
+      "file": "src/exposed.tsx",
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.0d51d8c1.js"
+            "static/js/async/__federation_expose_default_export.0915f279.js"
           ],
           "async": []
         },

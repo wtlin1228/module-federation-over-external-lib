@@ -4,7 +4,7 @@ import { dependencies } from "./package.json";
 export default createModuleFederationConfig({
   name: "kirby",
   exposes: {
-    ".": "./src/components/exposed.tsx",
+    ".": "./src/exposed.tsx",
   },
   shared: {
     react: { singleton: true },

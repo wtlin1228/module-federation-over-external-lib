@@ -19,3 +19,9 @@ Shows how to dynamically load remote apps using `@tanstack/react-router` and Mod
 Demonstrates how to dynamically register remotes at runtime.
 
 👉 [View Demo 3](./demo3/README.md)
+
+## Demo 4: Qiankun Integration
+
+Integrates Module Federation with [Qiankun](https://qiankun.umijs.org/) to support micro-frontend architecture with lifecycle-based mounting.
+
+👉 [View Demo 4](./demo4/README.md)
