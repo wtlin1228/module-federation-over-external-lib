@@ -1,17 +1,15 @@
-import { createModuleFederationConfig } from "@module-federation/rsbuild-plugin";
-import { dependencies } from "./package.json";
+import { defineConfig } from "@rsbuild/core";
+import { pluginReact } from "@rsbuild/plugin-react";
+import { pluginModuleFederation } from "@module-federation/rsbuild-plugin";
+import moduleFederationConfig from "./module-federation.config";
 
-export default createModuleFederationConfig({
-  name: "kirby",
-  exposes: {
-    ".": "./src/components/exposed.tsx",
+export default defineConfig({
+  output: {
+    minify: false,
+    assetPrefix: "http://localhost:3001/",
   },
-  shared: {
-    react: { singleton: true },
-    "react-dom": { singleton: true },
-    // specify the version manually for demo purpose
-    lodash: "^4.0.0",
-    // lodash: dependencies.lodash,
+  plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig, {})],
+  server: {
+    port: 3001,
   },
-  getPublicPath: `function() { return "http://localhost:3001/"; }`,
 });
